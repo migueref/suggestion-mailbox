@@ -64,7 +64,7 @@
 					<span class="focus-input100"></span>
 				</div>
         <div class="wrap-input100 validate-input" data-validate="Teléfono requerido">
-					<label class="label-input100" for="name">Teléfono</label>
+					<label class="label-input100" for="phone">Teléfono</label>
 					<input id="name" class="input100" type="text" name="phone" placeholder="Escriba su teléfono...">
 					<span class="focus-input100"></span>
 				</div>
@@ -75,7 +75,7 @@
 					<span class="focus-input100"></span>
 				</div>
         <div class="wrap-input100 validate-input" data-validate="Asunto requerido">
-					<label class="label-input100" for="name">Asunto</label>
+					<label class="label-input100" for="subject">Asunto</label>
 					<input id="name" class="input100" type="text" name="subject" placeholder="Escriba el asunto del mensaje...">
 					<span class="focus-input100"></span>
 				</div>
