@@ -51,8 +51,8 @@
           <div class="label-input100">Tipo del mensaje</div>
           <div>
             <select class="js-select2 input100" name="type" >
-              <option>Queja</option>
-              <option>Sugerencia</option>
+              <option value="Queja">Queja</option>
+              <option value="Sugerencia">Sugerencia</option>
             </select>
             <div class="dropDownSelect2"></div>
           </div>

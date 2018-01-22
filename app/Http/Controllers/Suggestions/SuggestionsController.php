@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Suggestions;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Suggestion;
 
 class SuggestionsController extends Controller
 {
@@ -35,7 +36,19 @@ class SuggestionsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $suggestion = new Suggestion;
+        $suggestion->type = $request->type;
+        $suggestion->name = $request->name;
+        $suggestion->phone = $request->phone;
+        $suggestion->email = $request->email;
+        $suggestion->subject = $request->subject;
+        $suggestion->message = $request->message;
+
+        if($suggestion->save()) {
+           return redirect('/');
+        } else {
+          return view('welcome');
+        }
     }
 
     /**
